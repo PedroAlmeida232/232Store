@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0f0f1e;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #0f0f1e 0%, #1f1f3a 100%);
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  color: #00f7ff;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #00ffee;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #b8b8d0;
+  font-weight: 500;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #00f7ff;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+nav ul a:hover {
+  color: #00f7ff;
+}
+
+nav ul a:hover::after {
+  width: 100%;
+}
+
+main.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.titulo {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #00f7ff;
+  text-align: center;
+}
+
+.sobre-box {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #1c1c2e;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 247, 255, 0.2);
+}
+
+.sobre-box h2 {
+  font-family: "Orbitron", sans-serif;
+  color: #00f7ff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sobre-box p {
+  color: #b8b8d0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.sobre-box strong {
+  color: #00f7ff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0f0f1e;
+  color: #888;
+}
