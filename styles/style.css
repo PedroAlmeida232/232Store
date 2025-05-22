@@ -14,34 +14,42 @@ body {
 
 header {
   position: fixed;
-  width: 90vw;
+  width: 100%;
   top: 0;
-  padding: 20px 50px;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 3;
+  
+  
 }
+
 .logo {
   font-family: "Orbitron", sans-serif;
   font-size: 2rem;
   font-weight: 900;
   color: #00f7ff;
   text-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
+  transition: color 0.3s ease;
 }
 
-header nav ul {
+.logo:hover {
+  color: #00ffee;
+}
+
+nav ul {
   display: flex;
-  gap: 10px;
+  gap: 48px;
 }
 
-header nav ul li {
+nav ul li {
   cursor: pointer;
   position: relative;
   padding: 5px 0;
 }
 
-header nav ul li::after {
+nav ul li::after {
   content: "";
   position: absolute;
   left: 0;
@@ -52,7 +60,7 @@ header nav ul li::after {
   transition: width 0.5s ease;
 }
 
-header nav ul li a:hover::after {
+nav ul li:hover::after {
   width: 100%;
 }
 
@@ -63,6 +71,7 @@ header nav ul li a:hover::after {
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
+
 
 .container {
   height: 100vh;
