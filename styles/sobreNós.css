@@ -24,6 +24,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 3;
+  
 }
 
 .logo {
@@ -41,13 +42,15 @@ header {
 
 nav ul {
   display: flex;
-  gap: 48px;
+  gap: 40px;
+  font-weight: 600;
 }
 
 nav ul li {
   cursor: pointer;
   position: relative;
   padding: 5px 0;
+  
 }
 
 nav ul li::after {

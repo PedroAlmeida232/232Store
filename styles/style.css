@@ -21,8 +21,6 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 3;
-  
-  
 }
 
 .logo {
@@ -41,6 +39,7 @@ header {
 nav ul {
   display: flex;
   gap: 48px;
+  font-weight: 500;
 }
 
 nav ul li {
@@ -71,7 +70,6 @@ nav ul li:hover::after {
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
-
 
 .container {
   height: 100vh;
