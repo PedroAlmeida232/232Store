@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Montserrat&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="{% static 'usuarios/home.css' %}">
+</head>
+
+<body>
+    <h2>Bem-vindo, {{ request.user.username }}!</h2>
+    <p>Você está logado.</p>
+    <a href="{% url 'logout' %}">Sair</a>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'usuarios/cadastro.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Cadastro</h2>
+        <form action="#" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p class="login-link">Já tem uma conta? <a href="{% url 'login' %}" class="link-login">Ir para Login</a></p>
+    </div>
+</body>
+
+</html>

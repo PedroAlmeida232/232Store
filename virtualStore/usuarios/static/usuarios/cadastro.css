@@ -1,0 +1,94 @@
+/* static/usuarios/cadastro.css */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #12182B; /* Dark futuristic blue */
+    color: #ECF2FF; /* Light blue-grey text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #1E293B; /* Slightly lighter blue for the container */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #64B5F6; /* Vibrant blue for the title */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #A5D8FF; /* Light blue for labels */
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 24px);
+    padding: 12px;
+    border: 1px solid #42A5F5; /* Blue border */
+    border-radius: 5px;
+    background-color: #1E293B;
+    color: #ECF2FF;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #1E88E5; /* Darker blue focus border */
+    box-shadow: 0 0 5px rgba(30, 136, 229, 0.5);
+}
+
+button {
+    background-color: #42A5F5; /* Blue button */
+    color: #ECF2FF;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #1E88E5; /* Darker blue on hover */
+}
+
+.login-link {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #A5D8FF;
+}
+
+.login-link a {
+    color: #64B5F6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
