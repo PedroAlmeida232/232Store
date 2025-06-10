@@ -4,6 +4,10 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 
+
+def index(request):
+    return render(request, 'usuarios/index.html')
+
 # Cadastro
 def cadastro_view(request):
     if request.method == 'POST':
