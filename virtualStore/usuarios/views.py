@@ -51,3 +51,10 @@ def logout_view(request):
 @login_required(login_url='login')
 def home_view(request):
     return render(request, 'usuarios/home.html')
+
+
+def produtos(request):
+    return render(request, 'usuarios/produtos.html')
+
+def sobre_nos(request):
+    return render(request, 'usuarios/sobreNós.html')
